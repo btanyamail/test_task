@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Search" timestamp="2020-01-26T19:56:26" time="0.045" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="7e18534bee396cf12a672eaab5e72d0e"/>
+      <property name="suiteName" value="Search"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value="./features/NL/navigation.feature"/>
+    </properties>
+  </testsuite>
+  <testsuite name="Search_by_make_and_model" timestamp="2020-01-26T19:56:26" time="0.029" tests="5" failures="0" errors="0" skipped="5">
+    <properties>
+      <property name="specId" value="7e18534bee396cf12a672eaab5e72d0e"/>
+      <property name="suiteName" value="Search by make and model"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value="./features/NL/navigation.feature"/>
+    </properties>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_navigate_to_en_be_page" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_select_make_Tesla_in_make_dropdown" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_select_model_Model_X_in_model_dropdown" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_click_Find_cars_button" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_should_see_a_list_of_cars_of_only_selected_make_and_model" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>
