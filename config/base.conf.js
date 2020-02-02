@@ -224,16 +224,16 @@ exports.config = {
    * Runs after a Cucumber step
    * @param {Object} stepResult step result
    */
-  afterStep: function afterStep(stepResult) {
-    if (stepResult.status === 'failed') {
-      const scrFolder = browser.options.screenshotPath;
-      const now = new Date();
-      const time = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}T`
-        + `${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}.${now.getMilliseconds()}Z`;
-      const fileName = `${scrFolder}ERROR_${browser.options.desiredCapabilities.browserName}_${time}.png`;
-      browser.saveScreenshot(fileName);
-    }
-  },
+  // afterStep: function afterStep(stepResult) {
+  //   if (stepResult.status === 'failed') {
+  //     const scrFolder = browser.options.screenshotPath;
+  //     const now = new Date();
+  //     const time = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}T`
+  //       + `${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}.${now.getMilliseconds()}Z`;
+  //     const fileName = `${scrFolder}ERROR_${browser.options.desiredCapabilities.browserName}_${time}.png`;
+  //     browser.saveScreenshot(fileName);
+  //   }
+  // },
   /**
    * Runs after a Cucumber scenario
    * @param {Object} scenario scenario details

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Search" timestamp="2020-01-29T00:59:11" time="20.936" tests="0" failures="0" errors="0" skipped="0">
+  <testsuite name="Search" timestamp="2020-02-02T15:17:34" time="25.023" tests="0" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="7e18534bee396cf12a672eaab5e72d0e"/>
       <property name="suiteName" value="Search"/>
@@ -8,37 +8,49 @@
       <property name="file" value="./features/NL/navigation.feature"/>
     </properties>
   </testsuite>
-  <testsuite name="Search_by_make_and_model" timestamp="2020-01-29T00:59:11" time="10.776" tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="Search_by_make_and_model" timestamp="2020-02-02T15:17:34" time="12.217" tests="5" failures="0" errors="1" skipped="2">
     <properties>
       <property name="specId" value="7e18534bee396cf12a672eaab5e72d0e"/>
       <property name="suiteName" value="Search by make and model"/>
       <property name="capabilities" value="chrome"/>
       <property name="file" value="./features/NL/navigation.feature"/>
     </properties>
-    <testcase classname="chrome.Search_by_make_and_model" name="I_navigate_to_en_be_page" time="21.669"/>
-    <testcase classname="chrome.Search_by_make_and_model" name="I_select_make_Tesla_in_make_dropdown" time="16.686"/>
-    <testcase classname="chrome.Search_by_make_and_model" name="I_select_model_Model_X_in_model_dropdown" time="13.011"/>
-    <testcase classname="chrome.Search_by_make_and_model" name="I_click_Find_cars_button" time="12.629"/>
-    <testcase classname="chrome.Search_by_make_and_model" name="I_should_see_a_list_of_cars_of_only_selected_make_and_model" time="11.079"/>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_navigate_to_en_be_page" time="25.285"/>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_select_make_Tesla_in_make_dropdown" time="19.063"/>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_select_model_Model_X_in_model_dropdown" time="14.314">
+      <error message="element not interactable"/>
+      <system-err>
+        <![CDATA[
+Error: An element command could not be completed because the element is not visible on the page.
+    at elementIdClick("0.48081685117318074-30") - click.js:20:22
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_click_Find_cars_button" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="chrome.Search_by_make_and_model" name="I_should_see_a_list_of_cars_of_only_selected_make_and_model" time="0">
+      <skipped/>
+    </testcase>
   </testsuite>
-  <testsuite name="Filter_by_price_and_transmission" timestamp="2020-01-29T00:59:22" time="10.148" tests="6" failures="0" errors="1" skipped="0">
+  <testsuite name="Filter_by_price_and_transmission" timestamp="2020-02-02T15:17:46" time="12.796" tests="6" failures="0" errors="1" skipped="0">
     <properties>
       <property name="specId" value="7e18534bee396cf12a672eaab5e72d0e"/>
       <property name="suiteName" value="Filter by price and transmission"/>
       <property name="capabilities" value="chrome"/>
       <property name="file" value="./features/NL/navigation.feature"/>
     </properties>
-    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_navigate_to_en_be_cars_page" time="10.893"/>
-    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_select_min_and_max_price_in_price_dropdowns" time="6.922"/>
-    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_select_transmission_option_Automatic" time="3.803"/>
-    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_select_sorting_option_Increasing_by_price_from_sorting_dropdown" time="2.453"/>
-    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_should_see_a_list_of_cars_with_Automatic_transmission" time="1.79"/>
-    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_should_see_a_list_of_cars_with_prices_within_defined_range_and_in_increasing_order" time="1.085">
+    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_navigate_to_en_be_cars_page" time="13.074"/>
+    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_select_min_and_max_price_in_price_dropdowns" time="7.603"/>
+    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_select_transmission_option_Automatic" time="4.032"/>
+    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_select_sorting_option_Increasing_by_price_from_sorting_dropdown" time="2.098"/>
+    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_should_see_a_list_of_cars_with_Automatic_transmission" time="1.688"/>
+    <testcase classname="chrome.Filter_by_price_and_transmission" name="I_should_see_a_list_of_cars_with_prices_within_defined_range_and_in_increasing_order" time="0.603">
       <error message="expected false to be true"/>
       <system-err>
         <![CDATA[
 AssertionError: expected false to be true
-    at World.Then (/Users/dmitry/Documents/Projects/tanya/git/TestTask/master/step_definitions/common/filter.steps.js:45:55)
+    at World.Then (/Users/dmitry/Documents/Projects/tanya/git/TestTask/master/step_definitions/common/filter.steps.js:49:51)
     at new Promise (<anonymous>)
     at new F (/Users/dmitry/Documents/Projects/tanya/git/TestTask/master/node_modules/core-js/library/modules/_export.js:36:28)
 ]]>
